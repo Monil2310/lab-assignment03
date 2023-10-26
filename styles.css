@@ -1,0 +1,98 @@
+html, body {
+    height: 100%; 
+    margin: 0;   
+    padding: 0;
+    display: flexbox; 
+    justify-content: center;  
+    align-items: center;  
+    background-color: #fbf9f900; 
+}
+.container {
+    width: 100%;
+    max-width: 400px; 
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(153, 1, 1, 0.1);
+    border-radius: 20px;
+    background-color: #d3f1c3; 
+    text-align: center ;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold; 
+    text-align: left; 
+}
+
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px; 
+    border: 2px solid #dddddd;  
+    border-radius: 5px; 
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    margin: 10px 0;
+}
+
+input[type="text"][disabled] {
+    background-color: #f3f3f3; 
+    color: #888888;
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: rgb(252, 250, 250);
+    appearance: none;
+    width: 15px; 
+    height: 15px; 
+    background: #908f8f; 
+    cursor: pointer; 
+    border-radius: 50%; 
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #070707;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .form-group label,
+    .form-group input,
+    .form-group output {
+        font-size: 16px; 
+    }
+
+    input[type="range"] {
+        width: calc(100% - 30px); 
+    }
+
+    input[type="range"]::-webkit-slider-thumb,
+    input[type="range"]::-moz-range-thumb {
+        width: 35px; 
+        height: 35px;
+    }
+
+    
+}
